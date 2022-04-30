@@ -23,18 +23,14 @@ public class VolumeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MuteAudio.isMuted == 0)
-        {
-            AudioListener.volume = volumeSlider.value;
-        }
+        
     }
 
     public void ChangeVolume()
     {
-        if (MuteAudio.isMuted == 0)
+        if (!MuteAudio.isMuted)
         {
             AudioListener.volume = volumeSlider.value;
-            Save();
         }
     }
     private void Load()
