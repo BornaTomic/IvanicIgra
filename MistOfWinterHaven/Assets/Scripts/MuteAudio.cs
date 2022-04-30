@@ -5,20 +5,12 @@ using UnityEngine.UI;
 
 public class MuteAudio : MonoBehaviour
 {
-    public static int isMuted = 0;
     public Slider volumeSlider;
+    public static bool isMuted = false;
     // Start is called before the first frame update
     void Start()
     {
-        if (!PlayerPrefs.HasKey("muteVolume"))
-        {
-            PlayerPrefs.SetFloat("muteVolume", 0);
-            Load();
-        }
-        else
-        {
-            Load();
-        }
+       
     }
 
     // Update is called once per frame
@@ -29,26 +21,15 @@ public class MuteAudio : MonoBehaviour
 
     public void Mute(bool muted)
     {
-        if (muted && isMuted == 0)
+        if (muted)
         {
             AudioListener.volume = 0;
-            isMuted = 1;
-            Save();
+            isMuted = true;
         }
         else
         {
             AudioListener.volume = volumeSlider.value;
-            isMuted = 0;
-            Save();
+            isMuted = false;
         }
-    }
-
-    private void Load()
-    {
-        volumeSlider.value = PlayerPrefs.GetFloat("muteVolume");
-    }
-    private void Save()
-    {
-        PlayerPrefs.SetInt("muteVolume", isMuted);
     }
 }

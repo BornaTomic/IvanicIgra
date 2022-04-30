@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class KeyBindsManager : MonoBehaviour
 {
-    public Dictionary<string, KeyCode> dictionary = new Dictionary<string, KeyCode>();
+    public static Dictionary<string, KeyCode> dictionary = new Dictionary<string, KeyCode>();
     public Text up, down, right, left;
     GameObject CurrentKey;
     Color32 NormalColor = new Color32(255, 255, 255, 255);
