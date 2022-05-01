@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a2d4a76a0ad53bf42a657c7377c5a716
+guid: 65ea4ba228f554b4c97b055c324ee6eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NPC sprite_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9be7c6d7f957ec4d9d4272a17cde24f
+      internalID: 277595345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,8 +135,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0004_0: 94251131
-      Sprite-0004_1: 1003517670
+      NPC sprite_0: 277595345
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
