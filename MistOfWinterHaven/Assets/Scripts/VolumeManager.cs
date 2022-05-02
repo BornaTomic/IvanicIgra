@@ -31,6 +31,7 @@ public class VolumeManager : MonoBehaviour
         if (!MuteAudio.isMuted)
         {
             AudioListener.volume = volumeSlider.value;
+            Save();
         }
     }
     private void Load()
