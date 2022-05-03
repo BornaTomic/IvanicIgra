@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settings;
     public GameObject keyBinds;
-    public GameObject gui;
     public GameObject pause;
     bool isInGame = false;
     bool isPause = false;
@@ -49,7 +48,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game");
         mainMenu.SetActive(false);
         isInGame = true;
-        gui.SetActive(true);
     }
     public void QuitGame()
     {
@@ -101,6 +99,5 @@ public class GameManager : MonoBehaviour
         isInGame = false;
         mainMenu.SetActive(true);
         pause.SetActive(false);
-        gui.SetActive(false);
     }
 }
