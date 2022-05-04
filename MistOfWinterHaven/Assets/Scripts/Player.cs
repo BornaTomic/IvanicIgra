@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float speed = 0f;
     public float fireRate = 0f;
     bool canShoot = true;
-    public POV pov = POV.desno;
+    public static POV pov = POV.desno;
     Animator animator;
     public static float damage;
     public Slider slider;
