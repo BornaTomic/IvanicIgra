@@ -3859,7 +3859,6 @@ MonoBehaviour:
   mainMenu: {fileID: 1622965061}
   settings: {fileID: 471585954}
   keyBinds: {fileID: 752790683}
-  gui: {fileID: 0}
   pause: {fileID: 2127009215}
 --- !u!114 &1397875472
 MonoBehaviour:
@@ -5635,7 +5634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -5669,7 +5668,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.00001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
