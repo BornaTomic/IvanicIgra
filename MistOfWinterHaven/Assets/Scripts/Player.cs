@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public float speed = 0f;
+    public float fireRate = 0f;
+    bool canShoot = true;
     public POV pov = POV.desno;
     Animator animator;
     public static float damage;
@@ -56,13 +58,20 @@ public class Player : MonoBehaviour
         {
             animator.SetInteger("Anim", 0);
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canShoot)
         {
             damage = slider.value;
             slider.value = 0;
             var obj = Instantiate(bullett, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
             obj.GetComponent<Bullett>().povB = pov;
+            StartCoroutine(FireRate());
         }
+    }
+    IEnumerator FireRate()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(fireRate);
+        canShoot = true;
     }
 }
 
