@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6193779248569451398}
   - component: {fileID: -397092543755017605}
   - component: {fileID: 9008418557407056035}
-  - component: {fileID: -8707754005404804768}
+  - component: {fileID: 7343681726928695691}
   m_Layer: 5
   m_Name: Sword Button
   m_TagString: Untagged
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 1149516073964813752, guid: 478bfa615cb58934b8203efe220d4ce5, type: 3}
   border: {fileID: 9191593202429496014, guid: 68c2033451ae94c45af3dc3ef36e8022, type: 3}
---- !u!61 &-8707754005404804768
+--- !u!61 &7343681726928695691
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.29525757}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -187,5 +187,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100.24451, y: 99.971985}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
