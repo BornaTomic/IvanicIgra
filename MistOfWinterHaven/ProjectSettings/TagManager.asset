@@ -55,6 +55,11 @@ TagManager:
   - name: Player
     uniqueID: 2502379945
     locked: 0
+ HEAD
+  - name: iznadPlayera
+    uniqueID: 3728377781
+
   - name: detalji
     uniqueID: 448880713
+ main
     locked: 0

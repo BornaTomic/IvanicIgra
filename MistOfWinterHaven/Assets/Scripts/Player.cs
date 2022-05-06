@@ -11,12 +11,13 @@ public class Player : MonoBehaviour
     public static POV pov = POV.desno;
     Animator animator;
     public static float damage;
-    public Slider slider;
+    Slider slider;
     public GameObject bullett;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        slider = GameObject.Find("MagicSlider").GetComponent<Slider>();
     }
 
     // Update is called once per frame
