@@ -13,8 +13,12 @@ GameObject:
   - component: {fileID: 5778509637815232676}
   - component: {fileID: 5439877080274027511}
   - component: {fileID: -4164263395563645488}
+ branch/VM
+  - component: {fileID: 5877594734427302880}
+
   - component: {fileID: 25537436776015156}
   - component: {fileID: 1258560423696619729}
+ main
   m_Layer: 5
   m_Name: Torch Button
   m_TagString: Untagged
@@ -149,7 +153,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 5931174568034064514, guid: 9440daf6ad58d8b44a9352609cf3c4e7, type: 3}
+ branch/VM
+--- !u!114 &5877594734427302880
+
 --- !u!114 &25537436776015156
+ main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,6 +166,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3976002777535145109}
   m_Enabled: 1
   m_EditorHideFlags: 0
+ branch/VM
+  m_Script: {fileID: 11500000, guid: b8c055a965e767045b9f4942025ff8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 0}
+  border: {fileID: 9191593202429496014, guid: 68c2033451ae94c45af3dc3ef36e8022, type: 3}
+
   m_Script: {fileID: 11500000, guid: 8259f537d5dfe4b4bac3dd31d3a61c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -189,3 +204,4 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+ main
