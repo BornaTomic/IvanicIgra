@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1129569393214529900}
   - component: {fileID: 4817067284499207014}
-  - component: {fileID: 660541049122809798}
   - component: {fileID: 5203395089784633319}
   - component: {fileID: -5670333678229893866}
   - component: {fileID: -7105857216819461404}
+  - component: {fileID: 1374748409181619372}
   m_Layer: 0
   m_Name: TorchPickUp
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5931174568034064514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.71, y: -2.27, z: 0}
+  m_LocalPosition: {x: 5.71, y: -2.27, z: -2.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,19 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &660541049122809798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5931174568034064514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e90605c204e50e47a7bd6cf3bcee9ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 3976002777535145109, guid: e192977164de58347914b7c40428a572, type: 3}
 --- !u!58 &5203395089784633319
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +151,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1374748409181619372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931174568034064514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e90605c204e50e47a7bd6cf3bcee9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 3976002777535145109, guid: e192977164de58347914b7c40428a572, type: 3}
