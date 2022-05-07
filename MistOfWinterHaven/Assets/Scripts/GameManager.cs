@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
         {
             Resume();
         }
+
+        if (CurrentHEalth >= MaxHealth) CurrentHEalth = MaxHealth;
     }
 
     private void Awake()
