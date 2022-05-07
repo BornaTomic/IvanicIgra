@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settings;
     public GameObject keyBinds;
+    public float MaxHealth;
+    public float CurrentHEalth;
     public GameObject pause;
     public GameObject inventory;
     public GameObject gui;
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour
         {
             Resume();
         }
+
+        if (CurrentHEalth >= MaxHealth) CurrentHEalth = MaxHealth;
     }
 
     private void Awake()

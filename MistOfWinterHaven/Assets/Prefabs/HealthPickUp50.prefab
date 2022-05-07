@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6693582359433965489}
   - component: {fileID: -3266129701496051418}
   m_Layer: 0
-  m_Name: HealthPickUp
+  m_Name: HealthPickUp50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: -1792587351
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 624262321, guid: af525cbdb0c917f448f44bac99d6fd0e, type: 3}
+  m_Sprite: {fileID: 172619331, guid: e601680931c10dc4dacd401359b17437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.1, y: 0.14}
+  m_Size: {x: 0.12, y: 0.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e90605c204e50e47a7bd6cf3bcee9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4240852855599971834, guid: 09ff45c787a159a49bc7b47fc71059ac, type: 3}
+  itemButton: {fileID: 4240852855599971834, guid: 46deed9a44f37a049ba63c80213269c7, type: 3}
 --- !u!58 &366839847333406936
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,8 +134,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.1, y: 0.14}
-    newSize: {x: 0.1, y: 0.14}
+    oldSize: {x: 0.08, y: 0.16}
+    newSize: {x: 0.12, y: 0.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
