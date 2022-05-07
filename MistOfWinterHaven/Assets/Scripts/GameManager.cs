@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settings;
     public GameObject keyBinds;
+    public float MaxHealth;
+    public float CurrentHEalth;
     public GameObject pause;
     bool isInGame = false;
     bool isPause = false;
