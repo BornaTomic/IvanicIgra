@@ -18,6 +18,7 @@ public class MakniTorch : MonoBehaviour
     }
     public void RemoveTorch()
     {
+        TorchButton.isTorch = false;
         Destroy(torch);
         Destroy(gameObject);
     }
