@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     public GameObject zavrKonv;
     public GameObject dialogBox;
     public GameObject continueButton;
+    public GameObject dialogManager;
     public TextMeshProUGUI textDisplay;
     //public GameObject quest;
     bool isCollision = false;
@@ -30,6 +31,7 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isCollision && !isDone)
         {
+            dialogManager.SetActive(true);
             Dialog.canType = true;
             tekstOdNpca.SetActive(true);
             Dialog.senteces = new string[1];
@@ -58,6 +60,7 @@ public class NPC : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            dialogManager.SetActive(false);
             tekst.SetActive(false);
             isCollision = false;
             tekstOdNpca.SetActive(false);
@@ -107,6 +110,7 @@ public class NPC : MonoBehaviour
         zavrKonv.SetActive(false);
         dialogBox.SetActive(false);
         continueButton.SetActive(false);
+        dialogManager.SetActive(false);
     }
 
     IEnumerator EndKonv()
@@ -122,5 +126,6 @@ public class NPC : MonoBehaviour
         zavrKonv.SetActive(false);
         dialogBox.SetActive(false);
         continueButton.SetActive(false);
+        dialogManager.SetActive(false);
     }
 }

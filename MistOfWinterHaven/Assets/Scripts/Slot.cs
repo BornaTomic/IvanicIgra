@@ -9,15 +9,16 @@ public class Slot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        inventory = GameObject.Find("Player").GetComponent<Inventory>();
         if (transform.childCount <= 0)
         {
-            inventory.isFul[i] = false;
+            inventory.isFull[i] = false;
         }
     }
 
