@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class DrinkPotion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float Pressentage;
+    public void Click()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.instance.CurrentHEalth = GameManager.instance.CurrentHEalth + (Pressentage / 100) * GameManager.instance.MaxHealth;
+        Destroy(gameObject);
     }
 }
