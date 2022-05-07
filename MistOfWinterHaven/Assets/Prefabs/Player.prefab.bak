@@ -1,8 +1,8 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
- HEAD
+<<<<<<< HEAD
 --- !u!1 &137545229889901638
-
+=======
 --- !u!1 &3366486762480783014
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +98,7 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &4847940082113091044
- main
+>>>>>>> main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,13 +269,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   fireRate: 2
- HEAD
+<<<<<<< HEAD
   bullett: {fileID: 2664835110234583594, guid: 2cc48fcf8558cc94680583cbc1953de4, type: 3}
 --- !u!114 &137545229889901693
-
+=======
   bullett: {fileID: 7329282626899409845, guid: 2cc48fcf8558cc94680583cbc1953de4, type: 3}
 --- !u!114 &4847940082113091039
- main
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,11 +287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f4ed4fa7e2bcd4dbf6c79a070fa8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
- HEAD
+<<<<<<< HEAD
   isFull: 0000000000
-
+=======
   isFull: 
- main
+>>>>>>> main
   slots:
   - {fileID: 0}
   - {fileID: 0}
