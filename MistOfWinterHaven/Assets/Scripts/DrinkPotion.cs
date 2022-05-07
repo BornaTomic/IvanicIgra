@@ -7,6 +7,7 @@ public class DrinkPotion : MonoBehaviour
     public float Pressentage;
     public void Click()
     {
-        GameManager.instance.CurrentHEalth = GameManager.instance.CurrentHEalth + (Pressentage / 100) * GameManager.instance.MaxHealth; 
+        GameManager.instance.CurrentHEalth = GameManager.instance.CurrentHEalth + (Pressentage / 100) * GameManager.instance.MaxHealth;
+        Destroy(gameObject);
     }
 }
