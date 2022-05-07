@@ -8,7 +8,7 @@ public class Dialog : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public GameObject continueButton;
     public static bool canType = false;
-    public string[] senteces;
+    public static string[] senteces;
     public static int index;
     public float typingSpeed;
     // Start is called before the first frame update
@@ -25,13 +25,13 @@ public class Dialog : MonoBehaviour
             StartCoroutine(Type());
             canType = false;
         }
-        if (index == NPC.index)
-        {
-            continueButton.SetActive(false);
-        }
-        if (textDisplay.text == senteces[index] && NPC.isStart)
+        if (textDisplay.text == senteces[index] && NPC.isStart && index != NPC.a)
         {
             continueButton.SetActive(true);
+        }
+        else if(index == NPC.a)
+        {
+            continueButton.SetActive(false);
         }
     }
     IEnumerator Type()
@@ -53,7 +53,7 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            textDisplay.text = senteces[index];
+            textDisplay.text = "";
         }
     }
 }
