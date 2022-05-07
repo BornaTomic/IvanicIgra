@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3976002777535145109
+--- !u!1 &1119464597287568673
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,32 +8,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8425800034054325984}
-  - component: {fileID: 8174002596539914267}
-  - component: {fileID: 5778509637815232676}
-  - component: {fileID: 5439877080274027511}
-  - component: {fileID: -4164263395563645488}
- branch/VM
-  - component: {fileID: 5877594734427302880}
-
-  - component: {fileID: 25537436776015156}
-  - component: {fileID: 1258560423696619729}
- main
+  - component: {fileID: 6124678830469990618}
+  - component: {fileID: 6524865196082778098}
+  - component: {fileID: 3389027045715118171}
+  - component: {fileID: 6193779248569451398}
+  - component: {fileID: -397092543755017605}
+  - component: {fileID: 4284716311214411381}
+  - component: {fileID: 7343681726928695691}
   m_Layer: 5
-  m_Name: Torch Button
+  m_Name: TorchButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8425800034054325984
+--- !u!224 &6124678830469990618
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1119464597287568673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,23 +40,23 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 45, y: 100}
+  m_SizeDelta: {x: 50, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8174002596539914267
+--- !u!222 &6524865196082778098
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_CullTransparentMesh: 1
---- !u!114 &5778509637815232676
+--- !u!114 &3389027045715118171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -84,13 +80,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5439877080274027511
+--- !u!114 &6193779248569451398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -124,11 +120,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 5778509637815232676}
+  m_TargetGraphic: {fileID: 3389027045715118171}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 25537436776015156}
+      - m_Target: {fileID: 4284716311214411381}
         m_TargetAssemblyTypeName: TorchButton, Assembly-CSharp
         m_MethodName: GetTorch
         m_Mode: 1
@@ -140,51 +136,40 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-4164263395563645488
+--- !u!114 &-397092543755017605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c5ad44359502864e869452cb94cd05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 5931174568034064514, guid: 9440daf6ad58d8b44a9352609cf3c4e7, type: 3}
- branch/VM
---- !u!114 &5877594734427302880
-
---- !u!114 &25537436776015156
- main
+--- !u!114 &4284716311214411381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_Enabled: 1
   m_EditorHideFlags: 0
- branch/VM
-  m_Script: {fileID: 11500000, guid: b8c055a965e767045b9f4942025ff8c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sword: {fileID: 0}
-  border: {fileID: 9191593202429496014, guid: 68c2033451ae94c45af3dc3ef36e8022, type: 3}
-
   m_Script: {fileID: 11500000, guid: 8259f537d5dfe4b4bac3dd31d3a61c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torch: {fileID: 3754991194515098424, guid: 6930f500cfee4da4a8850d5997c8487d, type: 3}
   border1: {fileID: 4650599466077953768, guid: 49668c5076bc9254ba6747c6bbb6c8dc, type: 3}
---- !u!61 &1258560423696619729
+--- !u!61 &7343681726928695691
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3976002777535145109}
+  m_GameObject: {fileID: 1119464597287568673}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -204,4 +189,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
- main

@@ -7,12 +7,12 @@ public class TorchButton : MonoBehaviour
     public GameObject torch;
     public GameObject border1;
     GameObject player;
-    GameObject canvas1;
+    GameObject canvas2;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        canvas1 = GameObject.FindGameObjectWithTag("Kanvas2");
+        canvas2 = GameObject.FindGameObjectWithTag("Kanvas2");
     }
 
     // Update is called once per frame
@@ -25,6 +25,6 @@ public class TorchButton : MonoBehaviour
         var obje = Instantiate(torch, new Vector3(player.transform.position.x, player.transform.position.y, 0), Quaternion.identity) as GameObject;
         var obje2 = Instantiate(border1, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
         obje.transform.parent = player.transform;
-        obje2.transform.parent = canvas1.transform;
+        obje2.transform.parent = gameObject.transform;
     }
 }
