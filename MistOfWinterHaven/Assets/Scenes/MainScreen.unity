@@ -3867,6 +3867,7 @@ MonoBehaviour:
   xpTable: 
   weapon: {fileID: 0}
   txtmanager: {fileID: 0}
+  player: {fileID: 0}
   coins: 0
   exp: 0
 --- !u!114 &1397875472
