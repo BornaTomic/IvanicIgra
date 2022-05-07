@@ -25,6 +25,6 @@ public class SwordButton : MonoBehaviour
         var obj = Instantiate(sword, new Vector3(player.transform.position.x, player.transform.position.y, 0), Quaternion.identity) as GameObject;
         var obj2 = Instantiate(border, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
         obj.transform.parent = player.transform;
-        obj2.transform.parent = canvas1.transform;
+        obj2.transform.parent = gameObject.transform;
     }
 }

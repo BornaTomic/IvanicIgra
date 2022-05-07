@@ -11,9 +11,19 @@ public class GameManager : MonoBehaviour
     public float MaxHealth;
     public float CurrentHEalth;
     public GameObject pause;
+    public GameObject inventory;
+    public GameObject gui;
     bool isInGame = false;
     bool isPause = false;
     public static GameManager instance;
+    public List<Sprite> weaponSprites;
+    public List<int> weaponPrices;
+    public List<int> xpTable;
+    public Weapon weapon;
+    public TxtManager txtmanager;
+    public Player player;
+    public int coins;
+    public int exp;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,8 +57,10 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("1.Level");
         mainMenu.SetActive(false);
+        gui.SetActive(true);
+        inventory.SetActive(true);
         isInGame = true;
     }
     public void QuitGame()
@@ -85,12 +97,14 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pause.SetActive(true);
+        inventory.SetActive(false);
         isPause = true;
         Time.timeScale = 0;
     }
     public void Resume()
     {
         pause.SetActive(false);
+        inventory.SetActive(true);
         isPause = false;
         Time.timeScale = 1;
     }
@@ -100,6 +114,28 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainScreen");
         isInGame = false;
         mainMenu.SetActive(true);
+        gui.SetActive(false);
+        inventory.SetActive(false);
         pause.SetActive(false);
+    }
+
+    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 kretnja, float trajanje) // E OVO TU TI JE ZNACI DA POZIVAS SAM FLOATING TEXT, NEZNAM ZAS SAM NASRO TO TU AL ONO NEMOJ SE ZBUNIT KAD KASNIJE CITAS
+    {
+        txtmanager.Show(msg, fontSize, color, position, kretnja, trajanje);
+    }
+
+    public bool TryUpgradeWeapon()
+    {
+        if (weaponPrices.Count <= weapon.weaponLevel)//Provjeravamo da oruzije nije slucajno vec max lvl
+        {
+            return false;
+        }
+        if (coins >= weaponPrices[weapon.weaponLevel])
+        {
+            coins -= weaponPrices[weapon.weaponLevel];
+            weapon.UpgradeWeapon();
+            return true;
+        }
+        return false;
     }
 }
