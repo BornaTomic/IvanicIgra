@@ -1,6 +1,7 @@
 fileFormatVersion: 2
  HEAD
  HEAD:MistOfWinterHaven/Assets/Prefabs/Player.prefab.bak.meta.bak.meta
+ HEAD
 guid: 6a446ca41664a6c4a8b0111a6dd3169d
 
 guid: be4c39905eb4f004aa3bfce23496ba90
@@ -11,6 +12,19 @@ guid: bb503a76421577c499567e0a45f2e772
 
 guid: 0ac834ea48a8acd48aa8a09a48750dee
  IF:MistOfWinterHaven/Assets/Prefabs/Player.prefab.bak.meta.bak.meta
+ IF
+
+guid: 0ac834ea48a8acd48aa8a09a48750dee
+
+guid: bb503a76421577c499567e0a45f2e772
+ BT:MistOfWinterHaven/Assets/Scenes/Backup (2).unity.meta
+
+ HEAD:MistOfWinterHaven/Assets/1.Level.unity.bak.meta.bak.meta
+guid: be4c39905eb4f004aa3bfce23496ba90
+
+guid: 6a446ca41664a6c4a8b0111a6dd3169d
+ BT:MistOfWinterHaven/Assets/Prefabs/Player.prefab.bak.meta.bak.meta
+ BT
  IF
 DefaultImporter:
   externalObjects: {}

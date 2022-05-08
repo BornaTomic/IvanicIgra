@@ -20,9 +20,16 @@ MonoBehaviour:
     height: 715
   m_ShowMode: 4
  HEAD
+ HEAD
   m_Title: 
 
   m_Title:
+ IF
+
+  m_Title:
+
+  m_Title: 
+ BT
  IF
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
@@ -179,8 +186,14 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars: []
  HEAD
+ HEAD
   m_MainToolbar: {fileID: 18}
 
+ IF
+
+
+  m_MainToolbar: {fileID: 18}
+ BT
  IF
   m_LastLoadedLayoutName: Default
 --- !u!114 &8
@@ -265,11 +278,20 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
  HEAD
+ HEAD
   m_Name: 
   m_EditorClassIdentifier: 
 
   m_Name:
   m_EditorClassIdentifier:
+ IF
+
+  m_Name:
+  m_EditorClassIdentifier:
+
+  m_Name: 
+  m_EditorClassIdentifier: 
+ BT
  IF
   m_Children: []
   m_Position:
@@ -456,9 +478,16 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
  HEAD
+ HEAD
   m_AssetGUID: 
 
   m_AssetGUID:
+ IF
+
+  m_AssetGUID:
+
+  m_AssetGUID: 
+ BT
  IF
   m_InstanceID: 0
   m_LockTracker:
@@ -493,9 +522,16 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
  HEAD
+ HEAD
       m_SelectedIDs: 
 
       m_SelectedIDs:
+ IF
+
+      m_SelectedIDs:
+
+      m_SelectedIDs: 
+ BT
  IF
       m_LastClickedID: 0
       m_ExpandedIDs: 42fbffff
@@ -516,9 +552,16 @@ MonoBehaviour:
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 0}
  HEAD
+ HEAD
       m_SearchString: 
 
       m_SearchString:
+ IF
+
+      m_SearchString:
+
+      m_SearchString: 
+ BT
  IF
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -652,11 +695,20 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
  HEAD
+ HEAD
   m_Name: 
   m_EditorClassIdentifier: 
 
   m_Name:
   m_EditorClassIdentifier:
+ IF
+
+  m_Name:
+  m_EditorClassIdentifier:
+
+  m_Name: 
+  m_EditorClassIdentifier: 
+ BT
  IF
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -664,9 +716,16 @@ MonoBehaviour:
     m_Text: Game
     m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
  HEAD
+ HEAD
     m_Tooltip: 
 
     m_Tooltip:
+ IF
+
+    m_Tooltip:
+
+    m_Tooltip: 
+ BT
  IF
   m_Pos:
     serializedVersion: 2
@@ -765,6 +824,10 @@ MonoBehaviour:
     height: 250
   m_ViewDataDictionary: {fileID: 0}
  HEAD
+ HEAD
+
+
+ IF
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +841,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DontSaveToLayout: 0
+ HEAD
 
 
+ IF
+
+ BT
  IF
