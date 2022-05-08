@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwordButton : MonoBehaviour
 {
+    public static bool isSword = false;
     public GameObject sword;
     public GameObject border;
     GameObject player;
@@ -22,9 +23,13 @@ public class SwordButton : MonoBehaviour
     }
     public void GetSword()
     {
-        var obj = Instantiate(sword, new Vector3(player.transform.position.x, player.transform.position.y, 0), Quaternion.identity) as GameObject;
-        var obj2 = Instantiate(border, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
-        obj.transform.parent = player.transform;
-        obj2.transform.parent = gameObject.transform;
+        if (!TorchButton.isTorch)
+        {
+            var obj = Instantiate(sword, new Vector3(player.transform.position.x, player.transform.position.y, 0), Quaternion.identity) as GameObject;
+            var obj2 = Instantiate(border, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
+            obj.transform.parent = player.transform;
+            obj2.transform.SetParent(canvas1.transform);
+            isSword = true;
+        }
     }
 }

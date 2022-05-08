@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("1.Level");
+        SceneManager.LoadScene("Snake level");
         mainMenu.SetActive(false);
         gui.SetActive(true);
         inventory.SetActive(true);
@@ -119,6 +119,7 @@ public class GameManager : MonoBehaviour
         gui.SetActive(false);
         inventory.SetActive(false);
         pause.SetActive(false);
+        RandomSceneGenerator.isEmpty = true;
     }
 
     public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 kretnja, float trajanje) // E OVO TU TI JE ZNACI DA POZIVAS SAM FLOATING TEXT, NEZNAM ZAS SAM NASRO TO TU AL ONO NEMOJ SE ZBUNIT KAD KASNIJE CITAS

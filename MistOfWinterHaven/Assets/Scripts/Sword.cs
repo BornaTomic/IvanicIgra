@@ -21,7 +21,7 @@ public class Sword : MonoBehaviour
     {
         moveX = player.transform.position.x;
         moveY = player.transform.position.y;
-        if (Player.pov == POV.desno)
+        if (Player.pov == POV.desno || Player.pov == POV.gore)
         {
             sr.flipX = false;
             if (isRight)
@@ -30,7 +30,7 @@ public class Sword : MonoBehaviour
                 isRight = false;
             }
         }
-        if(Player.pov == POV.lijevo)
+        if(Player.pov == POV.lijevo || Player.pov == POV.dolje)
         {
             sr.flipX = true;
             if (!isRight)

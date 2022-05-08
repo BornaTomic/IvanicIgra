@@ -9,6 +9,7 @@ TagManager:
   - Kanvas
   - Kanvas2
   - Torch
+  - Bullett
   layers:
   - Default
   - TransparentFX
