@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c055a965e767045b9f4942025ff8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sword: {fileID: 1149516073964813752, guid: 478bfa615cb58934b8203efe220d4ce5, type: 3}
+  sword: {fileID: 6221843263341750752, guid: 478bfa615cb58934b8203efe220d4ce5, type: 3}
   border: {fileID: 9191593202429496014, guid: 68c2033451ae94c45af3dc3ef36e8022, type: 3}
 --- !u!61 &7343681726928695691
 BoxCollider2D:

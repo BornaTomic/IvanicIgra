@@ -5,39 +5,28 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     SpriteRenderer sr;
-    bool isRight = true;
     GameObject player;
-    float moveX;
-    float moveY;
+    GameObject swordObj;
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
+        swordObj = GameObject.Find("SwordObj");
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveX = player.transform.position.x;
-        moveY = player.transform.position.y;
-        if (Player.pov == POV.desno || Player.pov == POV.gore)
+        if (Input.GetKeyDown(KeyBindsManager.dictionary["MoveRight"]) || Input.GetKeyDown(KeyBindsManager.dictionary["MoveUp"]))
         {
+            gameObject.transform.position = new Vector3(swordObj.transform.position.x + 0.375f, swordObj.transform.position.y + 0.393f);
             sr.flipX = false;
-            if (isRight)
-            {
-                gameObject.transform.position = new Vector3(moveX + 0.7f, moveY, 0);
-                isRight = false;
-            }
         }
-        if(Player.pov == POV.lijevo || Player.pov == POV.dolje)
+        if(Input.GetKeyDown(KeyBindsManager.dictionary["MoveLeft"]) || Input.GetKeyDown(KeyBindsManager.dictionary["MoveDown"]))
         {
+            gameObject.transform.position = new Vector3(swordObj.transform.position.x - 0.375f, swordObj.transform.position.y + 0.393f);
             sr.flipX = true;
-            if (!isRight)
-            {
-                gameObject.transform.position = new Vector3(moveX -0.7f, moveY, 0);
-                isRight = true;
-            }
         }
     }
 }
