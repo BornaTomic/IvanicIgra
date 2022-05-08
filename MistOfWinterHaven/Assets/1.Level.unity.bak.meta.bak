@@ -1,15 +1,15 @@
 fileFormatVersion: 2
- HEAD:MistOfWinterHaven/Assets/Prefabs/Necromancer.prefab.meta
- HEAD
+<<<<<<<< HEAD:MistOfWinterHaven/Assets/Prefabs/Necromancer.prefab.meta
+<<<<<<< HEAD
 guid: 1a817451386290f478b1ebebbc4c7bd7
-
+=======
 guid: 6b5db987bc816114eb290bd408aedde3
- main
+>>>>>>> main
 PrefabImporter:
-
+========
 guid: f94898e60dcd6e149bbba968db735771
 DefaultImporter:
- main:MistOfWinterHaven/Assets/1.Level.unity.bak.meta
+>>>>>>>> main:MistOfWinterHaven/Assets/1.Level.unity.bak.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
