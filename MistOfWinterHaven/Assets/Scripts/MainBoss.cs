@@ -112,11 +112,14 @@ public class MainBoss : MonoBehaviour
     IEnumerator JompOnTarget()
     {
             transform.position = Target.transform.position;
+        anim.SetBool("jump", true);
             jumpOnTarget = true;
             Instantiate(ProjectailUp, transform.position, Quaternion.identity);
             Instantiate(ProjectailDown, transform.position, Quaternion.identity);
             Instantiate(ProjectailLeft, transform.position, Quaternion.identity);
             Instantiate(ProjectailRight, transform.position, Quaternion.identity);
+        yield return new WaitForEndOfFrame();
+        anim.SetBool("jump", false);
         yield return new WaitForSeconds(JumpCooldown);
         jumpOnTarget = false;
     }
