@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
  HEAD
+=======
+ BT
+>>>>>>> 068135541aed1e3968a552162196d15374b39130
 --- !u!1 &137545229889901638
 
 --- !u!1 &3366486762480783014
@@ -269,7 +273,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   fireRate: 2
+<<<<<<< HEAD
  HEAD
+=======
+ BT
+>>>>>>> 068135541aed1e3968a552162196d15374b39130
   bullett: {fileID: 2664835110234583594, guid: 2cc48fcf8558cc94680583cbc1953de4, type: 3}
 --- !u!114 &137545229889901693
 
@@ -287,7 +295,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f4ed4fa7e2bcd4dbf6c79a070fa8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
  HEAD
+=======
+ BT
+>>>>>>> 068135541aed1e3968a552162196d15374b39130
   isFull: 0000000000
 
   isFull: 

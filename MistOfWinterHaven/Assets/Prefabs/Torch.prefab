@@ -107,7 +107,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+<<<<<<< HEAD
  HEAD
+=======
+ BT
+>>>>>>> 068135541aed1e3968a552162196d15374b39130
 --- !u!114 &1543373041474970263
 MonoBehaviour:
 
@@ -118,7 +122,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
  HEAD
+=======
+ BT
+>>>>>>> 068135541aed1e3968a552162196d15374b39130
   m_GameObject: {fileID: 3754991194515098424}
   m_Enabled: 1
   m_EditorHideFlags: 0

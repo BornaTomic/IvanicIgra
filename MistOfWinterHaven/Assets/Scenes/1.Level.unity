@@ -2318,10 +2318,17 @@ RectTransform:
   - {fileID: 1863644175}
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 11
+
+  m_RootOrder: 6
+ IF
+
   m_RootOrder: 6
 
   m_RootOrder: 11
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2501,7 +2508,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
  HEAD
+ HEAD
 
+ IF
 --- !u!1001 &490011037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2559,7 +2568,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b619bbeab2541847a281c3739da4efb, type: 3}
+ HEAD
+
+ IF
+
  main
+ IF
 --- !u!1 &694711623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,10 +2731,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 12
+
+  m_RootOrder: 7
+ IF
+
   m_RootOrder: 7
 
   m_RootOrder: 12
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731301929
 GameObject:
@@ -2808,10 +2829,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 7
+
+  m_RootOrder: 2
+ IF
+
   m_RootOrder: 2
 
   m_RootOrder: 7
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &731301932
 MonoBehaviour:
@@ -18178,10 +18206,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 10
+
+  m_RootOrder: 5
+ IF
+
   m_RootOrder: 5
 
   m_RootOrder: 10
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &999965954
 PolygonCollider2D:
@@ -18448,10 +18483,17 @@ Transform:
   - {fileID: 1115726760}
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 9
+
+  m_RootOrder: 4
+ IF
+
   m_RootOrder: 4
 
   m_RootOrder: 9
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261230766
 GameObject:
@@ -18711,10 +18753,17 @@ Transform:
   - {fileID: 411847996}
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 6
+
+  m_RootOrder: 1
+ IF
+
   m_RootOrder: 1
 
   m_RootOrder: 6
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1552481240
 GameObject:
@@ -20956,10 +21005,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
  HEAD
+ HEAD
+  m_RootOrder: 8
+
+  m_RootOrder: 3
+ IF
+
   m_RootOrder: 3
 
   m_RootOrder: 8
  main
+ IF
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &941929191358908012
 MonoBehaviour:
