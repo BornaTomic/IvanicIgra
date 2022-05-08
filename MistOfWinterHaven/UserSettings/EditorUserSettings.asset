@@ -6,7 +6,20 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+ HEAD
+      value: 515307055103080a590d5920452008444e4e192c75717531787a4b37e7b4676d
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 0008515650500b080b0c5f74137a5944441619792f2c726279701b65e4b36760
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5050575f01040a02595c092315750744424f4d2b7f7925327a704b30e6b36d6f
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 0757015156545c5f5f0d0d7b48255e4445154b78757877647d701935e1b16660
+
       value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+ main
       flags: 0
     RecentlyUsedSceneGuid-1:
       value: 005002055304085f080b5d70477a5944414f49282a7175682c791962b5e5656d
@@ -18,7 +31,29 @@ EditorUserSettings:
       value: 5b53035054015d0d085a082347755e44434e4d782a7f253474784966b1b7663d
       flags: 0
     RecentlyUsedSceneGuid-4:
+ branch/VM
+ HEAD
+      value: 0005525651015802580b5823152608444415197c752b7e33792b1967e7b03769
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 0204565100040f085b5c5b7342750b4410161c2f287f206075714967bbe5666f
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5300000704565a5e5d0a0d7644775a44154e197b792c7f632e711935b1b5623a
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 540801535402080d0c580e7611720f4440164f73282e226529284c36bae33739
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 530155505c075a09090d0d2441220d44444e1d727c7b2568297a4565b7b1676a
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 0609515256015e0e0e5e0d23477b0b444f161e732a7f77607a2c4c36b6b3623e
+
+      value: 01075756030d585d540d0e77417b0d44144f1e7d787c25317d7a4435b2b5323a
+
       value: 015502555d54500c0b5c547046765944444f1c737b7c73317a7c4532e1b4676d
+ main
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 5b09555751065c035c565473147a064413164f297f707066792c4c31e1b6656e
@@ -34,6 +69,7 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 02040c5e5c000b5e5d0c0a2343275c44134e1c2c7b7e233229791967b7b1306c
+ main
       flags: 0
   m_VCAutomaticAdd: 1
   m_VCDebugCom: 0
