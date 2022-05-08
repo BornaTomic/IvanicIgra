@@ -18,6 +18,7 @@ public class MakniSword : MonoBehaviour
     }
     public void RemoveSword()
     {
+        SwordButton.isSword = false;
         Destroy(sword);
         Destroy(gameObject);
     }

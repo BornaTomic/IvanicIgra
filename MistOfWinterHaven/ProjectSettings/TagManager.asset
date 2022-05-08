@@ -9,6 +9,7 @@ TagManager:
   - Kanvas
   - Kanvas2
   - Torch
+  - Bullett
   layers:
   - Default
   - TransparentFX
@@ -54,4 +55,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2502379945
+    locked: 0
+  - name: Iznad Playera
+    uniqueID: 1683912521
     locked: 0
