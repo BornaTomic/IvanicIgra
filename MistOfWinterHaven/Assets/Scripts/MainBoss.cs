@@ -9,6 +9,7 @@ public class MainBoss : MonoBehaviour
     public GameObject ProjectailDown;
     public GameObject ProjectailLeft;
     public GameObject ProjectailRight;
+    public Animator anim;
     public float AtackCooldownLenght;
     public float speed;
     public float MaxHp;
@@ -25,20 +26,58 @@ public class MainBoss : MonoBehaviour
         //mowment
         if (Target.transform.position.x > transform.position.x)
         {
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            if (Target.transform.position.x - transform.position.x <= speed * Time.deltaTime)
+            {
+                transform.position = new Vector3(Target.transform.position.x, transform.position.y, 0);
+            }
+            else
+            {
+                transform.Translate(speed * Time.deltaTime, 0, 0);
+                anim.SetInteger("State", 2);
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
         }
         else if (Target.transform.position.x < transform.position.x)
         {
-            transform.Translate(-speed * Time.deltaTime, 0, 0);
+            if (transform.position.x - Target.transform.position.x <= speed * Time.deltaTime)
+            {
+                transform.position = new Vector3(Target.transform.position.x, transform.position.y, 0);
+            }
+            else
+            {
+                transform.Translate(-speed * Time.deltaTime, 0, 0);
+                anim.SetInteger("State", 2);
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
-        if (Target.transform.position.y > transform.position.y)
+        else if (Target.transform.position.y > transform.position.y)
         {
-            transform.Translate(0, speed * Time.deltaTime, 0);
+            if (Target.transform.position.y - transform.position.y <= speed * Time.deltaTime)
+            {
+                transform.position = new Vector3(transform.position.x, Target.transform.position.y, 0);
+                anim.SetInteger("State", 1);
+            }
+            else
+            {
+                transform.Translate(0, speed * Time.deltaTime, 0);
+                anim.SetInteger("State", 1);
+            }
         }
         else if (Target.transform.position.y < transform.position.y)
         {
-            transform.Translate(0, -speed * Time.deltaTime, 0);
-        }
+            if (transform.position.y - Target.transform.position.y <= speed * Time.deltaTime)
+            {
+                transform.position = new Vector3(transform.position.x, Target.transform.position.y, 0);
+                anim.SetInteger("State", 0);
+            }
+            else
+            {
+                transform.Translate(0, -speed * Time.deltaTime, 0);
+                anim.SetInteger("State", 0);
+            }
+         }
+
+        
 
         //Napad
 
