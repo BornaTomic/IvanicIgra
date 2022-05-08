@@ -1,13 +1,9 @@
 fileFormatVersion: 2
- HEAD
-guid: 13d0a4af82dfc4a4ca94931878343332
-
- HEAD:MistOfWinterHaven/Assets/Prefabs/Necromancer.prefab.meta.bak.meta
+<<<<<<<< HEAD:MistOfWinterHaven/Assets/Prefabs/Necromancer.prefab.meta.bak.meta
 guid: 045ffc87b6c10d948b7f2cdd36ea5877
-
+========
 guid: d12da2706c5a0ce44a5b40433ffeeae6
- BT:MistOfWinterHaven/Assets/Prefabs/Torch.prefab.bak.meta.bak.meta
- BT
+>>>>>>>> BT:MistOfWinterHaven/Assets/Prefabs/Torch.prefab.bak.meta.bak.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
