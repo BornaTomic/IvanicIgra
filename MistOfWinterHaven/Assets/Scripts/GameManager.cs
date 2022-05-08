@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Snake level");
+        SceneManager.LoadScene("1.Level");
         mainMenu.SetActive(false);
         gui.SetActive(true);
         inventory.SetActive(true);
