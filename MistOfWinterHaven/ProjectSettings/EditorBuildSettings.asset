@@ -60,7 +60,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+ HEAD
+  - enabled: 1
+    path: Assets/Scenes/1.Level.unity
+    guid: e8e3748770d61394c84580aa0b5ab15f
+
  main
+ HEAD
  HEAD
 
     path: Assets/Scenes/Snake level.unity
@@ -68,4 +74,7 @@ EditorBuildSettings:
  origin/branch/VM
 
  54a77d663ddb36f69593349b51a4ec8e91a38eb3
+
+ e0d3bcb95cbb96b22a940aab71447ff2d7281fe3
+ main
   m_configObjects: {}
