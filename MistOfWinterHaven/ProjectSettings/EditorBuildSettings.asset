@@ -7,6 +7,10 @@ EditorBuildSettings:
  HEAD
   m_Scenes:
  HEAD
+
+ HEAD
+ branch/VM
+ HEAD
  HEAD
 
  IF
@@ -17,11 +21,15 @@ EditorBuildSettings:
  origin/branch/VM
 
  branch/VM
+ HEAD
  main
 
   m_Scenes:
  branch/VM
  IF
+
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
+ branch/VM
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: 87173008985af194dbedb2abd2da3914
@@ -30,6 +38,9 @@ EditorBuildSettings:
     guid: 2b3c46a14c5b5c7489af993a536de435
  HEAD
  HEAD
+ HEAD
+
+ branch/VM
   - enabled: 1
     path: Assets/Scenes/Main Boss scene.unity
     guid: ca6c61adee1279f4781bf938a0d17e15
@@ -37,13 +48,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Test.unity
     guid: 2cda990e2423bbf4892e6590ba056729
 
+ HEAD
  main
 
  IF
 
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
+ branch/VM
+
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+ HEAD
  HEAD
  HEAD
  main
@@ -54,12 +70,23 @@ EditorBuildSettings:
 
 
  IF
+
+ branch/VM
  HEAD
   - enabled: 1
     path: Assets/Scenes/1.Level.unity
     guid: e8e3748770d61394c84580aa0b5ab15f
 
  main
+ HEAD
+ HEAD
+
+    path: Assets/Scenes/Snake level.unity
+    guid: 2b3c46a14c5b5c7489af993a536de435
+ origin/branch/VM
+
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
+
  e0d3bcb95cbb96b22a940aab71447ff2d7281fe3
  main
   m_configObjects: {}
