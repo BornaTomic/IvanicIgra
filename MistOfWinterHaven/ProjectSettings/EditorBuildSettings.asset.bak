@@ -4,52 +4,25 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+  m_Scenes:
 <<<<<<< HEAD
-  m_Scenes:
 =======
- HEAD
-  m_Scenes:
- HEAD
-
- HEAD
- branch/VM
- HEAD
- HEAD
-
- IF
- HEAD
-  m_Scenes: []
-
- HEAD
- origin/branch/VM
-
- branch/VM
- HEAD
- main
-
-  m_Scenes:
- branch/VM
- IF
-
- 54a77d663ddb36f69593349b51a4ec8e91a38eb3
- branch/VM
->>>>>>> BT
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+>>>>>>> main
+  - enabled: 1
+    path: Assets/Scenes/1.Level.unity
+    guid: e8e3748770d61394c84580aa0b5ab15f
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: 87173008985af194dbedb2abd2da3914
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/1.Level.unity
-    guid: e8e3748770d61394c84580aa0b5ab15f
   - enabled: 1
     path: Assets/Scenes/Scena1.unity
     guid: 17513604fe516ef42ae9a3a4f1945fea
   - enabled: 1
     path: Assets/Scenes/Scena2.unity
     guid: 3ac9d1c942eae684485a31cb796cd397
-  - enabled: 1
-    path: Assets/Scenes/Scena3.unity
-    guid: b6c0f81f9cb51824b8f744ca039f05fb
   - enabled: 1
     path: Assets/Scenes/Scena4.unity
     guid: 88a143581881d994ea7c38664e1bc616
@@ -59,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scena6.unity
     guid: 8b761446e4da76a45952f7cd9145372e
+  - enabled: 1
+    path: Assets/Scenes/Snake level.unity
+    guid: 2b3c46a14c5b5c7489af993a536de435
   - enabled: 1
     path: Assets/Scenes/Scena7.unity
     guid: 3f1abd9a214d0264084d9ba0c0c6fa4d
@@ -75,69 +51,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Scena11.unity
     guid: 1639327983110a143a9c0014efd5c02c
   - enabled: 1
-    path: Assets/Scenes/Scena12.unity
-    guid: a33bf8a733c2bae499af6bd2a7695359
-  - enabled: 1
-    path: Assets/Scenes/Snake level.unity
-    guid: 2b3c46a14c5b5c7489af993a536de435
-  - enabled: 1
     path: Assets/Scenes/Main Boss scene.unity
     guid: ca6c61adee1279f4781bf938a0d17e15
-=======
-    path: Assets/Scenes/Snake level.unity
-    guid: 2b3c46a14c5b5c7489af993a536de435
- HEAD
- HEAD
- HEAD
-
- branch/VM
-  - enabled: 1
-    path: Assets/Scenes/Main Boss scene.unity
-    guid: ca6c61adee1279f4781bf938a0d17e15
-  - enabled: 1
-    path: Assets/Scenes/Game Test.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-
- HEAD
- main
-
- IF
-
- 54a77d663ddb36f69593349b51a4ec8e91a38eb3
- branch/VM
-
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
- HEAD
- HEAD
- HEAD
- main
-
-    path: Assets/Scenes/Snake level.unity
-    guid: 2b3c46a14c5b5c7489af993a536de435
- origin/branch/VM
-
-
- IF
-
- branch/VM
- HEAD
-  - enabled: 1
-    path: Assets/Scenes/1.Level.unity
-    guid: e8e3748770d61394c84580aa0b5ab15f
-
- main
- HEAD
- HEAD
-
-    path: Assets/Scenes/Snake level.unity
-    guid: 2b3c46a14c5b5c7489af993a536de435
- origin/branch/VM
-
- 54a77d663ddb36f69593349b51a4ec8e91a38eb3
-
- e0d3bcb95cbb96b22a940aab71447ff2d7281fe3
- main
->>>>>>> BT
   m_configObjects: {}

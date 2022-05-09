@@ -23,11 +23,12 @@ public class GameManager : MonoBehaviour
     public TxtManager txtmanager;
     public Player player;
     public int coins;
+    GameObject player1;
     public int exp;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player1 = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("1.Level");
+        SceneManager.LoadScene("Snake level");
         mainMenu.SetActive(false);
         gui.SetActive(true);
         inventory.SetActive(true);
@@ -112,6 +113,7 @@ public class GameManager : MonoBehaviour
     }
     public void MainMenu()
     {
+        Destroy(player1);
         Time.timeScale = 1;
         SceneManager.LoadScene("MainScreen");
         isInGame = false;
