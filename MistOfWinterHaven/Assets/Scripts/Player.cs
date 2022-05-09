@@ -13,11 +13,24 @@ public class Player : MonoBehaviour
     public static float damage;
     Slider slider;
     public GameObject bullett;
+    Player instance;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         slider = GameObject.Find("MagicSlider").GetComponent<Slider>();
+    }
+    private void Awake()
+    {
+        if (instance is null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
 
     // Update is called once per frame

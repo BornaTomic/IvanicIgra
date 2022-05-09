@@ -22,6 +22,8 @@ public class Enemy : Kretnje
     private Collider2D[] hits = new Collider2D[10];//lista za hitse
     private Animator animator;
     private SpriteRenderer sr;
+    bool isAttackedSword = false;
+    bool isAttackedBullett = false;
 
     protected override void Start()
     {
@@ -79,6 +81,16 @@ public class Enemy : Kretnje
 
     private void Update()
     {
+        if (isAttackedBullett)
+        {
+            hp -= Player.damage;
+            isAttackedBullett = false;
+        }
+        if (isAttackedSword)
+        {
+            hp -= 50;
+            isAttackedSword = false;
+        }
         if (gameObject.transform.position.y - playerTransform.transform.position.y < 0)
         {
             animator.SetInteger("Anim", 1);
@@ -100,6 +112,18 @@ public class Enemy : Kretnje
         if (hp <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "AttackArea")
+        {
+            isAttackedSword = true;
+        }
+        if (collision.gameObject.tag == "Bullett")
+        {
+            Destroy(collision.gameObject);
+            isAttackedBullett = true;
         }
     }
 }
