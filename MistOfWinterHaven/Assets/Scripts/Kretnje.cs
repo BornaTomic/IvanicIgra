@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Kretnje : Fighter //abstract znaci nema vise drag and dropanja ovog na objekte, moze samo biti nasljedjeno, to vec daje ideju za sta mi ova klasa sluzi
+public abstract class Kretnje : MonoBehaviour //abstract znaci nema vise drag and dropanja ovog na objekte, moze samo biti nasljedjeno, to vec daje ideju za sta mi ova klasa sluzi
 {
     protected BoxCollider2D boxCollider;
     private Vector3 moveDelta;                          //jednostavna stvar, skuzit cu sta je sutra kad ovo citam isto
     private RaycastHit2D hit;                            //raycast je nevidljiv "Laser" koji koristi pri kolizijama
-    protected float ySpeed = 7.5f;//varijable
-    protected float xSpeed = 10f;//isto kao gore
+    protected float ySpeed = 1.5f;//varijable
+    protected float xSpeed = 1.5f;//isto kao gore
 
     protected virtual void Start()
     {
@@ -27,10 +27,6 @@ public abstract class Kretnje : Fighter //abstract znaci nema vise drag and drop
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-
-        moveDelta += pushDirection; //dodavanje guranja pri koliziji
-
-        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecSpeed); // smanjivanje sile odgurivanja inace bi vjecno isao 
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));//Ukratko da ovo skratim, ako prepozna layer actor ili blocking nece moci tu hodati
         if (hit.collider == null)
