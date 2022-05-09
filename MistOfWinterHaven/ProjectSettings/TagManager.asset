@@ -58,3 +58,6 @@ TagManager:
   - name: Player
     uniqueID: 373829245
     locked: 0
+  - name: Ispred Playera
+    uniqueID: 487626227
+    locked: 0
