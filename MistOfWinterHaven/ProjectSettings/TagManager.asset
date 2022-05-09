@@ -12,9 +12,13 @@ TagManager:
   - Bullett
   - Fighter
  HEAD
+ HEAD
   - AttackArea
 
  BT
+
+  - Boss
+ origin/branch/VM
   layers:
   - Default
   - TransparentFX
