@@ -4049,7 +4049,7 @@ MonoBehaviour:
   settings: {fileID: 471585954}
   keyBinds: {fileID: 752790683}
   MaxHealth: 100
-  CurrentHEalth: 1
+  CurrentHEalth: 100
   pause: {fileID: 2127009215}
   inventory: {fileID: 8123168020402892102}
   gui: {fileID: 2498673553191700025}

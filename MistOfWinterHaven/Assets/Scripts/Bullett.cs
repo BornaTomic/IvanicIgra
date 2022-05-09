@@ -6,12 +6,10 @@ public class Bullett : MonoBehaviour
 {
     public POV povB;
     public float speed = 0f;
-    GameObject enemy;
     // Start is called before the first frame update
     void Start()
     {
         Invoke("Destroy2", 2f);
-        enemy = GameObject.FindGameObjectWithTag("Fighter");
     }
 
     // Update is called once per frame
@@ -37,13 +35,5 @@ public class Bullett : MonoBehaviour
     void Destroy2()
     {
         Destroy(gameObject);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Fighter")
-        {
-            Destroy(gameObject);
-            enemy.GetComponent<Enemy>().hp -= Player.damage;
-        }
     }
 }
