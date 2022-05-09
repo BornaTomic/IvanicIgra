@@ -9,10 +9,12 @@ public class RandomSceneGenerator : MonoBehaviour
     int index = 0;
     public List<string> s;
     public static RandomSceneGenerator instance;
+    GameObject border;
     // Start is called before the first frame update
     void Start()
     {
         Scenes1();
+        border = GameObject.Find("Border");
     }
 
     private void Awake()
@@ -41,26 +43,24 @@ public class RandomSceneGenerator : MonoBehaviour
     {
         s.Add("Scena1");
         s.Add("Scena2");
-        s.Add("Scena3");
         s.Add("Scena4");
         s.Add("Scena5");
         s.Add("Scena6");
-        s.Add("Scena7");
         s.Add("Scena8");
         s.Add("Scena9");
         s.Add("Scena10");
         s.Add("Scena11");
-        s.Add("Scena12");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         index = Random.Range(0, s.Count);
         SceneManager.LoadScene(s[index]);
+        border.GetComponent<MakniSword>().RemoveSword();
         s.RemoveAt(index);
         if (s.Count == 0)
         {
-            SceneManager.LoadScene("Snake level");
+            SceneManager.LoadScene("Scena7");
         }
     }
 }
