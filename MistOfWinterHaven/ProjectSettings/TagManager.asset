@@ -10,12 +10,16 @@ TagManager:
   - Kanvas2
   - Torch
   - Bullett
+ HEAD
   - Fighter
+
+  - Boss
+ origin/branch/VM
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boss
   - Water
   - UI
   - 
@@ -59,4 +63,7 @@ TagManager:
     locked: 0
   - name: Iznad Playera
     uniqueID: 1683912521
+    locked: 0
+  - name: Boss
+    uniqueID: 3087717189
     locked: 0
