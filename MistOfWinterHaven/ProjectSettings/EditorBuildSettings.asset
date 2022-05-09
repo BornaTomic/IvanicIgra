@@ -7,8 +7,12 @@ EditorBuildSettings:
   m_Scenes:
  HEAD
  HEAD
+ HEAD
 
  origin/branch/VM
+
+ branch/VM
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
   - enabled: 1
     path: Assets/Scenes/MainScreen.unity
     guid: 87173008985af194dbedb2abd2da3914
@@ -43,6 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Snake level.unity
     guid: 2b3c46a14c5b5c7489af993a536de435
+ HEAD
   - enabled: 1
     path: Assets/Scenes/Main Boss scene.unity
     guid: ca6c61adee1279f4781bf938a0d17e15
@@ -50,12 +55,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Test.unity
     guid: 2cda990e2423bbf4892e6590ba056729
 
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
+
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
  main
+ HEAD
 
     path: Assets/Scenes/Snake level.unity
     guid: 2b3c46a14c5b5c7489af993a536de435
  origin/branch/VM
+
+ 54a77d663ddb36f69593349b51a4ec8e91a38eb3
   m_configObjects: {}
