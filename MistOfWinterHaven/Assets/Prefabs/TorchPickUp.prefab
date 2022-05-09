@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 4231616259292789952}
   - component: {fileID: 3483039527106058305}
   - component: {fileID: 5273429509410824880}
-  - component: {fileID: 7278658396847762754}
   - component: {fileID: 7742822292234644234}
   m_Layer: 0
   m_Name: TorchPickUp
@@ -225,27 +224,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.375, y: 0.9375}
   m_EdgeRadius: 0
---- !u!50 &7278658396847762754
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3039879606004004644}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &7742822292234644234
 MonoBehaviour:
   m_ObjectHideFlags: 0
