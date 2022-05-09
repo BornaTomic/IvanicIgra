@@ -11,14 +11,6 @@ TagManager:
   - Torch
   - Bullett
   - Fighter
- HEAD
- HEAD
-  - AttackArea
-
- BT
-
-  - Boss
- origin/branch/VM
   layers:
   - Default
   - TransparentFX
@@ -56,26 +48,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
- HEAD
-  - name: IspoTilemape
-    uniqueID: 2578841125
+  - name: IspodTileMapa
+    uniqueID: 2507158315
     locked: 0
-  - name: TileMapa
-    uniqueID: 2822292419
-    locked: 0
-  - name: Player
-    uniqueID: 192228813
-    locked: 0
-  - name: IznadPlayera
-    uniqueID: 2540360007
-
-  - name: ispodTilemape
-    uniqueID: 1074997939
-    locked: 0
-  - name: Tilemapa
-    uniqueID: 3182404817
+  - name: TileMap
+    uniqueID: 3918002937
     locked: 0
   - name: Player
-    uniqueID: 3156555973
- BT
+    uniqueID: 373829245
     locked: 0
