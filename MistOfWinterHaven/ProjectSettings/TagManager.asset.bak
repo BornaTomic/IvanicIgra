@@ -9,11 +9,17 @@ TagManager:
   - Kanvas
   - Kanvas2
   - Torch
+  - Bullett
+<<<<<<< HEAD
+  - Fighter
+=======
+  - Boss
+>>>>>>> origin/branch/VM
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boss
   - Water
   - UI
   - 
@@ -55,11 +61,9 @@ TagManager:
   - name: Player
     uniqueID: 2502379945
     locked: 0
-<<<<<<< HEAD
-  - name: iznadPlayera
-    uniqueID: 3728377781
-=======
-  - name: detalji
-    uniqueID: 448880713
->>>>>>> main
+  - name: Iznad Playera
+    uniqueID: 1683912521
+    locked: 0
+  - name: Boss
+    uniqueID: 3087717189
     locked: 0
