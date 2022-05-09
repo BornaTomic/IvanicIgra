@@ -264,12 +264,12 @@ SpriteRenderer:
   m_SortingLayer: 0
 
   m_SortingLayerID: 192228813
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
   m_SortingLayer: 3
  IF
- BT
+>>>>>>> BT
   m_SortingOrder: 0
   m_Sprite: {fileID: -83332910, guid: c7b48966bc9685e4ca308710c8a9a5ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -597,12 +597,12 @@ TilemapRenderer:
   m_SortingLayer: 3
 
   m_SortingLayerID: -1754607289
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
   m_SortingLayer: 4
  IF
- BT
+>>>>>>> BT
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3678,12 +3678,12 @@ SpriteRenderer:
   m_SortingLayer: 0
 
   m_SortingLayerID: 192228813
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
   m_SortingLayer: 3
  IF
- BT
+>>>>>>> BT
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 65ea4ba228f554b4c97b055c324ee6eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3931,12 +3931,12 @@ TilemapRenderer:
   m_SortingLayerID: -1112562479
 
   m_SortingLayerID: -1472674877
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
  IF
   m_SortingLayer: 2
- BT
+>>>>>>> BT
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -5911,12 +5911,12 @@ TilemapRenderer:
   m_SortingLayerID: 1074997939
 
   m_SortingLayerID: -1716126171
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
  IF
   m_SortingLayer: 1
- BT
+>>>>>>> BT
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -20561,12 +20561,12 @@ TilemapRenderer:
   m_SortingLayerID: -1112562479
 
   m_SortingLayerID: -1472674877
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
  IF
   m_SortingLayer: 2
- BT
+>>>>>>> BT
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -22742,12 +22742,12 @@ SpriteRenderer:
   m_SortingLayerID: -1138411323
 
   m_SortingLayerID: 192228813
- HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
-
+=======
  IF
   m_SortingLayer: 3
- BT
+>>>>>>> BT
   m_SortingOrder: 1
   m_Sprite: {fileID: 4997699329115283089, guid: 41cf1b9962b627f42958080226beeb89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
