@@ -8690,18 +8690,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
- HEAD
+<<<<<<< HEAD
 --- !u!19719996 &758241146
 TilemapCollider2D:
-
+=======
 --- !u!1 &764289613
 GameObject:
- BT
+>>>>>>> BT
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
- HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 758241142}
   m_Enabled: 1
   m_Density: 1
@@ -8712,7 +8712,7 @@ GameObject:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
-
+=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 764289614}
@@ -8965,7 +8965,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
- BT
+>>>>>>> BT
 --- !u!1 &809053757
 GameObject:
   m_ObjectHideFlags: 0

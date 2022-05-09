@@ -55,19 +55,19 @@ public class SwordObj : MonoBehaviour
             {
                 animator.SetInteger("Sword", 2);
             }
-            if (Player.pov == POV.gore)
+            if (Player.pov == POV.gore && SwordButton.isSword)
             {
                 attckUp.SetActive(true);
             }
-            else if (Player.pov == POV.dolje)
+            else if (Player.pov == POV.dolje && SwordButton.isSword)
             {
                 attckDown.SetActive(true);
             }
-            else if (Player.pov == POV.lijevo)
+            else if (Player.pov == POV.lijevo && SwordButton.isSword)
             {
                 attckLeft.SetActive(true);
             }
-            else if (Player.pov == POV.desno)
+            else if (Player.pov == POV.desno && SwordButton.isSword)
             {
                 attckRight.SetActive(true);
             }

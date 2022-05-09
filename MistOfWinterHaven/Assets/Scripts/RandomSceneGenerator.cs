@@ -39,18 +39,18 @@ public class RandomSceneGenerator : MonoBehaviour
     }
     void Scenes1()
     {
-        s.Add("Scene1");
-        s.Add("Scene2");
-        s.Add("Scene3");
-        s.Add("Scene4");
-        s.Add("Scene5");
-        s.Add("Scene6");
-        s.Add("Scene7");
-        s.Add("Scene8");
-        s.Add("Scene9");
-        s.Add("Scene10");
-        s.Add("Scene11");
-        s.Add("Scene12");
+        s.Add("Scena1");
+        s.Add("Scena2");
+        s.Add("Scena3");
+        s.Add("Scena4");
+        s.Add("Scena5");
+        s.Add("Scena6");
+        s.Add("Scena7");
+        s.Add("Scena8");
+        s.Add("Scena9");
+        s.Add("Scena10");
+        s.Add("Scena11");
+        s.Add("Scena12");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

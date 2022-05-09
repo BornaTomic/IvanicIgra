@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
- HEAD:MistOfWinterHaven/Assets/Prefabs/TorchPickUp.prefab
+<<<<<<< HEAD:MistOfWinterHaven/Assets/Prefabs/TorchPickUp.prefab
   - component: {fileID: 8559652801236137276}
   - component: {fileID: 1599188431192514112}
-
+=======
   - component: {fileID: 1129569393214529900}
   - component: {fileID: 4817067284499207014}
   - component: {fileID: 5203395089784633319}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138834352477123713}
   - component: {fileID: 9031442636211396605}
- BT:MistOfWinterHaven/Assets/Fonts/Prefabs/TorchPickUp.prefab
+>>>>>>> BT:MistOfWinterHaven/Assets/Fonts/Prefabs/TorchPickUp.prefab
   m_Layer: 0
   m_Name: LightEffect
   m_TagString: Untagged

@@ -10,8 +10,12 @@ TagManager:
   - Kanvas2
   - Torch
   - Bullett
-<<<<<<< HEAD
   - Fighter
+<<<<<<< HEAD
+ HEAD
+  - AttackArea
+
+ BT
 =======
   - Boss
 >>>>>>> origin/branch/VM
@@ -19,7 +23,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Boss
+  - 
   - Water
   - UI
   - 
@@ -52,18 +56,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ispod tilemape
-    uniqueID: 1291573803
+ HEAD
+  - name: IspoTilemape
+    uniqueID: 2578841125
     locked: 0
-  - name: tilemap
-    uniqueID: 1556666049
+  - name: TileMapa
+    uniqueID: 2822292419
     locked: 0
   - name: Player
-    uniqueID: 2502379945
+    uniqueID: 192228813
     locked: 0
-  - name: Iznad Playera
-    uniqueID: 1683912521
+  - name: IznadPlayera
+    uniqueID: 2540360007
+
+  - name: ispodTilemape
+    uniqueID: 1074997939
     locked: 0
-  - name: Boss
-    uniqueID: 3087717189
+  - name: Tilemapa
+    uniqueID: 3182404817
+    locked: 0
+  - name: Player
+    uniqueID: 3156555973
+ BT
     locked: 0

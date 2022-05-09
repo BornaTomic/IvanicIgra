@@ -20,17 +20,19 @@ public class NPC : MonoBehaviour
     bool isDone = false;
     public static bool isStart = false;
     public static int a = 0;
+    GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
-
+        inventory = GameObject.Find("Inventory");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isCollision && !isDone)
+        if (Input.GetKeyDown(KeyCode.E) && isCollision && !isDone && !isStart)
         {
+            inventory.SetActive(false);
             dialogManager.SetActive(true);
             Dialog.canType = true;
             tekstOdNpca.SetActive(true);
@@ -60,6 +62,8 @@ public class NPC : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            inventory.SetActive(true);
+            isStart = false;
             dialogManager.SetActive(false);
             tekst.SetActive(false);
             isCollision = false;
@@ -100,6 +104,8 @@ public class NPC : MonoBehaviour
     }
     public void ZavrKonv()
     {
+        inventory.SetActive(true);
+        isStart = false;
         Dialog.index = 0;
         textDisplay.text = "";
         tekst.SetActive(false);
@@ -117,6 +123,8 @@ public class NPC : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         Dialog.index = 0;
+        isStart = false;
+        inventory.SetActive(true);
         textDisplay.text = "";
         tekst.SetActive(false);
         isCollision = false;

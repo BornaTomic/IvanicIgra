@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    public GameObject tekst;
+    //public GameObject tekst;
     public GameObject loot;
-    Animator animator;
+    //Animator animator;
     bool isCollision = false;
     bool isOpen = false;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,11 +20,11 @@ public class Chest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isCollision)
         {
-            animator.SetInteger("ChestAnim", 1);
+            //animator.SetInteger("ChestAnim", 1);
             var obj = Instantiate(loot, new Vector3(transform.position.x, transform.position.y + 1, 0), Quaternion.identity) as GameObject;
             isCollision = false;
             isOpen = true;
-            tekst.SetActive(false);
+            //tekst.SetActive(false);
         }
     }
 
@@ -32,7 +32,7 @@ public class Chest : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && !isOpen)
         {
-            tekst.SetActive(true);
+            //tekst.SetActive(true);
             isCollision = true;
         }
     }
@@ -41,7 +41,7 @@ public class Chest : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            tekst.SetActive(false);
+            //tekst.SetActive(false);
             isCollision = false;
         }
     }
