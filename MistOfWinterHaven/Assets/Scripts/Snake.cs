@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
+    public float hp = 100;
     public Transform[] waypoints;
     public float speed = 0.2f;
     private int waypointIndex = 0;
@@ -11,9 +12,15 @@ public class Snake : MonoBehaviour
     public GameObject prefab;
     public GameObject kiselina;
     public static int snakeLenght = 0;
+    bool isAttackedSword = false;
+    bool isAttackedBullett = false;
+    public float damage = 30;
+    bool isInColl = false;
+    GameObject gamemanager;
     // Start is called before the first frame update
     void Start()
     {
+        gamemanager = GameObject.Find("GameManager");
         StartCoroutine(Spawn());
         rb = GetComponent<Rigidbody2D>();
         this.transform.position = GameObject.Find("WayPoint").transform.position;
@@ -40,6 +47,25 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isAttackedBullett)
+        {
+            hp -= Player.damage;
+            isAttackedBullett = false;
+        }
+        if (isAttackedSword)
+        {
+            hp -= 50;
+            isAttackedSword = false;
+        }
+        if (isInColl)
+        {
+            gamemanager.GetComponent<GameManager>().CurrentHEalth -= damage;
+            isInColl = false;
+        }
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
         if (waypointIndex <= waypoints.Length - 1)
         {
             Vector2 newPos = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, speed);
@@ -73,11 +99,18 @@ public class Snake : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "Player")
+        {
+            isInColl = true;
+        }
+        if (collision.gameObject.tag == "AttackArea")
+        {
+            isAttackedSword = true;
+        }
         if (collision.gameObject.tag == "Bullett")
         {
-            Instantiate(kiselina, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
-            Destroy(gameObject);
             Destroy(collision.gameObject);
+            isAttackedBullett = true;
         }
     }
 }

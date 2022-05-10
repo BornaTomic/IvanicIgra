@@ -5,13 +5,15 @@ using UnityEngine;
 public class Necromancer : MonoBehaviour
 {
     public float Hp;
-    public GameObject Target;
+    GameObject Target;
     public float speed;
     public bool Doing;
     public GameObject SpawningEnemy;
     public float spawningDelay;
     public bool CanSpawn;
     public Animator anim;
+    bool isAttackedSword = false;
+    bool isAttackedBullett = false;
     private void Start()
     {
         Target = GameObject.FindWithTag("Player");
@@ -19,8 +21,17 @@ public class Necromancer : MonoBehaviour
 
     public void Update()
     {
-
-        if(Doing == false && CanSpawn == true)
+        if (isAttackedBullett)
+        {
+            Hp -= Player.damage;
+            isAttackedBullett = false;
+        }
+        if (isAttackedSword)
+        {
+            Hp -= 50;
+            isAttackedSword = false;
+        }
+        if (Doing == false && CanSpawn == true)
         {
             StartCoroutine(Spawn());
             anim.SetInteger("State", 0);
@@ -84,5 +95,17 @@ public class Necromancer : MonoBehaviour
         Destroy(gameObject);
         yield return new WaitForEndOfFrame();
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "AttackArea")
+        {
+            isAttackedSword = true;
+        }
+        if (collision.gameObject.tag == "Bullett")
+        {
+            Destroy(collision.gameObject);
+            isAttackedBullett = true;
+        }
     }
 }
