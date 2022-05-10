@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public Renderer rend;
     public float speed = 0f;
     public float fireRate = 0f;
     bool canShoot = true;
@@ -14,6 +16,9 @@ public class Player : MonoBehaviour
     Slider slider;
     public GameObject bullett;
     Player instance;
+    public Material Defuser;
+    public Material Defult;
+    public Scene scena;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +85,16 @@ public class Player : MonoBehaviour
             obj.GetComponent<Bullett>().povB = pov;
             StartCoroutine(FireRate());
         }
+
+        if(SceneManager.GetActiveScene() == scena)
+        {
+            rend.sharedMaterial = Defuser;
+         }
+        else
+        {
+            rend.sharedMaterial = Defult;
+        }
+
     }
     IEnumerator FireRate()
     {
