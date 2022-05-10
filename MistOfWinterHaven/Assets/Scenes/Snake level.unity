@@ -887,6 +887,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   HEAD
   HEAD
+  HEAD
   m_SortingLayerID: 1291573803
   m_SortingLayer: 0
  
@@ -902,6 +903,15 @@ TilemapRenderer:
   m_SortingLayer: 0
  branch/VM
   BT
+ 
+ HEAD
+  m_SortingLayerID: -1787808981
+  m_SortingLayer: 1
+
+  m_SortingLayerID: 1291573803
+  m_SortingLayer: 0
+ branch/VM
+  main
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -23851,6 +23861,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   HEAD
   HEAD
+  HEAD
   m_SortingLayerID: 1556666049
   m_SortingLayer: 0
  
@@ -23866,6 +23877,15 @@ TilemapRenderer:
   m_SortingLayer: 0
  branch/VM
   BT
+ 
+ HEAD
+  m_SortingLayerID: -376964359
+  m_SortingLayer: 2
+
+  m_SortingLayerID: 1556666049
+  m_SortingLayer: 0
+ branch/VM
+  main
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
