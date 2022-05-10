@@ -5,13 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-<<<<<<< HEAD
-=======
+ HEAD
+
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
->>>>>>> main
+ main
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/1.Level.unity
     guid: e8e3748770d61394c84580aa0b5ab15f
   - enabled: 1
@@ -53,4 +54,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Boss scene.unity
     guid: ca6c61adee1279f4781bf938a0d17e15
+=======
+    path: Assets/Scenes/ZmijaLvl.unity
+    guid: 89d3521e039d6a9458850624a41490e8
+>>>>>>> origin/IO
   m_configObjects: {}
