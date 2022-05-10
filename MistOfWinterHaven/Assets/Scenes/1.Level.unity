@@ -22607,9 +22607,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d4c9730f384514faf5f04dc8cb94f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 2595507638067564263}
   speed: 3
   fireRate: 2
   bullett: {fileID: 2664835110234583594, guid: 2cc48fcf8558cc94680583cbc1953de4, type: 3}
+  Defuser: {fileID: 2100000, guid: 7fa291d813e00c9448df34505dd1271b, type: 2}
+  Defult: {fileID: 2100000, guid: ebfa451766cce8c49ba599e32ec9c41c, type: 2}
+  scena:
+    m_Handle: 0
 --- !u!95 &2595507638067564260
 Animator:
   serializedVersion: 4
