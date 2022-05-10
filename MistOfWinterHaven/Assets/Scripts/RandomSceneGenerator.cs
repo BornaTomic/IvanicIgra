@@ -49,18 +49,20 @@ public class RandomSceneGenerator : MonoBehaviour
         s.Add("Scena8");
         s.Add("Scena9");
         s.Add("Scena10");
-        s.Add("Scena11");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         index = Random.Range(0, s.Count);
         SceneManager.LoadScene(s[index]);
-        border.GetComponent<MakniSword>().RemoveSword();
         s.RemoveAt(index);
-        if (s.Count == 0)
+        if (s.Count == 4)
         {
             SceneManager.LoadScene("Scena7");
+        }
+        if (s.Count == 0)
+        {
+            SceneManager.LoadScene("Scena11");
         }
     }
 }

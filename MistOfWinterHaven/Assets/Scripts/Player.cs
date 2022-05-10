@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public Renderer rend;
+    Renderer rend;
     public float speed = 0f;
     public float fireRate = 0f;
     bool canShoot = true;
@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         slider = GameObject.Find("MagicSlider").GetComponent<Slider>();
+        rend = GetComponent<Renderer>();
     }
     private void Awake()
     {

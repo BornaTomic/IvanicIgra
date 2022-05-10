@@ -4048,8 +4048,8 @@ MonoBehaviour:
   mainMenu: {fileID: 1622965061}
   settings: {fileID: 471585954}
   keyBinds: {fileID: 752790683}
-  MaxHealth: 100
-  CurrentHEalth: 100
+  MaxHealth: 200
+  CurrentHEalth: 200
   pause: {fileID: 2127009215}
   inventory: {fileID: 8123168020402892102}
   gui: {fileID: 2498673553191700025}
@@ -6011,7 +6011,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 200
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
