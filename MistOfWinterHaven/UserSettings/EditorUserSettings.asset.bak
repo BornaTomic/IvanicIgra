@@ -6,6 +6,19 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< HEAD
+=======
+ HEAD
+ HEAD
+
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+ main
+
+ branch/VM
+      value: 5357000454540c0e5f5d5c7544710b44104f4a7e7b7d20697f2a4e66bbb5353b
+
+ HEAD
+>>>>>>> origin/branch/VM
       value: 5b09555751065c035c565473147a064413164f297f707066792c4c31e1b6656e
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -28,7 +41,7 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-7:
       value: 5207075f56075e02555d5d7340220e44451641297c787764282f1966e1b0663b
-<<<<<<< HEAD
+ HEAD
 
       value: 5b06055156055903545659231672064412151d2e2e7a2732297b1932b1b9656c
  main
@@ -45,19 +58,37 @@ EditorUserSettings:
  main
       flags: 0
     RecentlyUsedSceneGuid-3:
+ fbfefbd3ad8d14745ef5150740e07902750b3137
       value: 505705070751505a5f5f582640710944464f4c2e752a27602e791e65e4e1603c
       flags: 0
-    RecentlyUsedSceneGuid-4:
+    RecentlyUsedSceneGuid-1:
       value: 5b53035054015d0d085a082347755e44434e4d782a7f253474784966b1b7663d
       flags: 0
+ HEAD
+    RecentlyUsedSceneGuid-2:
+
     RecentlyUsedSceneGuid-5:
  branch/VM
+ main
       value: 555003565256505a0f0c5a7315220e4412161d2c297822362f7c4867e7e66060
       flags: 0
     RecentlyUsedSceneGuid-3:
       value: 520601575603590f0b0b59734626594444161d732d7b27642b784467b7e63139
       flags: 0
     RecentlyUsedSceneGuid-4:
+ HEAD
+      value: 515307055103080a590d5920452008444e4e192c75717531787a4b37e7b4676d
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 060951555201510c5a5e087441700644154f4c7f747827317d2b4832e0b1613e
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5050575f01040a02595c092315750744424f4d2b7f7925327a704b30e6b36d6f
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      flags: 0
+
       value: 060951555201510c5a5e087441700644154f4c7f747827317d2b4832e0b1613e
       flags: 0
     RecentlyUsedSceneGuid-5:
@@ -69,6 +100,7 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-7:
 
+ main
     RecentlyUsedSceneGuid-8:
  HEAD
       value: 5b0850555007585e5d5d552646220644434f407f7c7e74642c7d4c67bbb03160
@@ -94,22 +126,28 @@ EditorUserSettings:
       value: 515307055103080a590d5920452008444e4e192c75717531787a4b37e7b4676d
       flags: 0
     RecentlyUsedSceneGuid-9:
-=======
+
       flags: 0
     RecentlyUsedSceneGuid-8:
->>>>>>> BT
+ BT
       value: 555003565256505a0f0c5a7315220e4412161d2c297822362f7c4867e7e66060
       flags: 0
     RecentlyUsedSceneGuid-9:
-<<<<<<< HEAD
+ HEAD
       value: 5b53035054015d0d085a082347755e44434e4d782a7f253474784966b1b7663d
  branch/VM
  main
+ HEAD
+ fbfefbd3ad8d14745ef5150740e07902750b3137
+
  branch/VM
  main
-=======
+<<<<<<< HEAD
+
       value: 515307055103080a590d5920452008444e4e192c75717531787a4b37e7b4676d
->>>>>>> BT
+ BT
+=======
+>>>>>>> origin/branch/VM
       flags: 0
   m_VCAutomaticAdd: 1
   m_VCDebugCom: 0
