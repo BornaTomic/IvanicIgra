@@ -21,10 +21,9 @@ public class Player : MonoBehaviour
     Player instance;
     public Material Defuser;
     public Material Defult;
- HEAD
+
 
     public Scene[] scena;
- origin/IF
     // Start is called before the first frame update
     void Start()
     {
@@ -100,11 +99,7 @@ public class Player : MonoBehaviour
             StartCoroutine(FireRate());
         }
 
- HEAD
-        if(SceneManager.GetActiveScene().name == "PrviLvl")
-
-        if(SceneManager.GetActiveScene() == scena[1] || SceneManager.GetActiveScene() == scena[0])
- origin/IF
+        if(SceneManager.GetActiveScene().name == "PrviLvl" || SceneManager.GetActiveScene().name == "Zadnja NPC scena")
         {
             rend.material = Defult;
          }

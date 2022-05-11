@@ -22176,12 +22176,7 @@ MonoBehaviour:
   bullett: {fileID: 2664835110234583594, guid: 2cc48fcf8558cc94680583cbc1953de4, type: 3}
   Defuser: {fileID: 2100000, guid: 7fa291d813e00c9448df34505dd1271b, type: 2}
   Defult: {fileID: 2100000, guid: ebfa451766cce8c49ba599e32ec9c41c, type: 2}
- HEAD
-
-  scena:
-  - m_Handle: 0
-  - m_Handle: 0
- origin/IF
+  scena: []
 --- !u!114 &4361570784622143875
 MonoBehaviour:
   m_ObjectHideFlags: 0
