@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5269349220202364037}
   m_Layer: 0
   m_Name: Zmija
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0c70b4941d98c4c91b70a65fc9342a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 100
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -146,6 +147,7 @@ MonoBehaviour:
   speed: 0.2
   prefab: {fileID: 5405054813568312295, guid: 89a01074198b5614193d84f7cffeff0d, type: 3}
   kiselina: {fileID: 4937808364173932167, guid: 6660360b8c192a246ae22aa1dc2bb3e2, type: 3}
+  damage: 30
 --- !u!50 &5269349220202364037
 Rigidbody2D:
   serializedVersion: 4

@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private GameObject gameManager;
     Renderer rend;
     public float speed = 0f;
     public float fireRate = 0f;
     bool canShoot = true;
+    public static bool isDead = false;
+    public static bool isDamaged = false;
     public static POV pov = POV.desno;
     Animator animator;
     public static float damage;
@@ -18,10 +21,11 @@ public class Player : MonoBehaviour
     Player instance;
     public Material Defuser;
     public Material Defult;
-    public Scene scena;
+    public Scene[] scena;
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
         animator = GetComponent<Animator>();
         slider = GameObject.Find("MagicSlider").GetComponent<Slider>();
         rend = GetComponent<Renderer>();
@@ -42,7 +46,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyBindsManager.dictionary["MoveUp"]))
+        if (isDead)
+        {
+            animator.SetInteger("Anim", 3);
+            Destroy(gameObject);
+            isDead = false;
+        }
+        if (Input.GetKey(KeyBindsManager.dictionary["MoveUp"]) && !isDead)
         {
             transform.Translate(0, speed * Time.deltaTime, 0);
             pov = POV.gore;
@@ -50,7 +60,7 @@ public class Player : MonoBehaviour
             animator.SetFloat("MoveX", 0);
             animator.SetFloat("MoveY", 1);
         }
-        else if (Input.GetKey(KeyBindsManager.dictionary["MoveDown"]))
+        else if (Input.GetKey(KeyBindsManager.dictionary["MoveDown"]) && !isDead)
         {
             transform.Translate(0, -speed * Time.deltaTime, 0);
             pov = POV.dolje;
@@ -58,7 +68,7 @@ public class Player : MonoBehaviour
             animator.SetFloat("MoveX", 0);
             animator.SetFloat("MoveY", -1);
         }
-        else if (Input.GetKey(KeyBindsManager.dictionary["MoveLeft"]))
+        else if (Input.GetKey(KeyBindsManager.dictionary["MoveLeft"]) && !isDead)
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
             pov = POV.lijevo;
@@ -66,7 +76,7 @@ public class Player : MonoBehaviour
             animator.SetFloat("MoveX", -1);
             animator.SetFloat("MoveY", 0);
         }
-        else if (Input.GetKey(KeyBindsManager.dictionary["MoveRight"]))
+        else if (Input.GetKey(KeyBindsManager.dictionary["MoveRight"]) && !isDead)
         {
             transform.Translate(speed * Time.deltaTime, 0, 0);
             pov = POV.desno;
@@ -78,7 +88,7 @@ public class Player : MonoBehaviour
         {
             animator.SetInteger("Anim", 0);
         }
-        if (Input.GetKeyDown(KeyCode.F) && canShoot)
+        if (Input.GetKeyDown(KeyCode.F) && canShoot && !isDead)
         {
             damage = slider.value;
             slider.value = 0;
@@ -87,7 +97,7 @@ public class Player : MonoBehaviour
             StartCoroutine(FireRate());
         }
 
-        if(SceneManager.GetActiveScene() == scena)
+        if(SceneManager.GetActiveScene() == scena[1] || SceneManager.GetActiveScene() == scena[0])
         {
             rend.sharedMaterial = Defuser;
          }
@@ -96,6 +106,11 @@ public class Player : MonoBehaviour
             rend.sharedMaterial = Defult;
         }
 
+        if (isDamaged && !isDead)
+        {
+            animator.SetInteger("Anim", 2);
+            isDamaged = false;
+        }
     }
     IEnumerator FireRate()
     {

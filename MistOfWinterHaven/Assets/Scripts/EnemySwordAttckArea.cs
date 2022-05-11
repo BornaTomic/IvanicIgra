@@ -18,6 +18,7 @@ public class EnemySwordAttckArea : MonoBehaviour
     {
         if (isInColl)
         {
+            Player.isDamaged = true;
             gamemanager.GetComponent<GameManager>().CurrentHEalth -= damage;
             isInColl = false;
         }

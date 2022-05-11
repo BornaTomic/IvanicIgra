@@ -9,10 +9,6 @@ public class CharMenu : MonoBehaviour
     public Image weaponSprite; //isto img
     public void OnUpgradeClick()//koristimo za upgradeanje
     {
-        if (GameManager.instance.TryUpgradeWeapon())
-        {
-            UpdateMenu();//pozivamo updatemenu
-        }
     }
     public void UpdateMenu()//Omogucuje mjenjanje informacija o podatcima playera preko GameManagera
     {
