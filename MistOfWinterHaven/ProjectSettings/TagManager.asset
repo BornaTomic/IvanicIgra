@@ -61,3 +61,6 @@ TagManager:
   - name: Ispred Playera
     uniqueID: 487626227
     locked: 0
+  - name: YOU DIED
+    uniqueID: 4213483459
+    locked: 0
