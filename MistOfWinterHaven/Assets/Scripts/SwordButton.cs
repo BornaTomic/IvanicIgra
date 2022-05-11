@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwordButton : MonoBehaviour
 {
@@ -19,10 +20,7 @@ public class SwordButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.isInGame)
-        {
-            Destroy(gameObject);
-        }
+        
     }
     public void GetSword()
     {

@@ -65,10 +65,12 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
+        CurrentHEalth = 200;
         SceneManager.LoadScene("PrviLvl");
         mainMenu.SetActive(false);
         gui.SetActive(true);
         inventory.SetActive(true);
+        Destroy(GameObject.Find("Sword Button(Clone)"));
         isInGame = true;
     }
     public void QuitGame()
@@ -119,6 +121,7 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         Destroy(player1);
+        Player.isDead = true;
         Time.timeScale = 1;
         SceneManager.LoadScene("MainScreen");
         isInGame = false;
@@ -133,7 +136,6 @@ public class GameManager : MonoBehaviour
         youDied.SetActive(true);
         yield return new WaitForSeconds(5f);
         MainMenu();
-        Player.isDead = true;
         youDied.SetActive(false);
     }
 }

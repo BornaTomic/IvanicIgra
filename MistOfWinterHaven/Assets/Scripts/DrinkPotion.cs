@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DrinkPotion : MonoBehaviour
 {
     public float Pressentage;
+    GameObject gameManager;
     private void Update()
     {
-        if (!GameManager.isInGame)
-        {
-            Destroy(gameObject);
-        }
+        
     }
     public void Click()
     {
