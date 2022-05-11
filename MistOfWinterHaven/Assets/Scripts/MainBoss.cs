@@ -19,8 +19,14 @@ public class MainBoss : MonoBehaviour
     public bool InRange = false;
     public bool jumpOnTarget;
     public float JumpCooldown;
+    public GameObject Gem;
     void Update()
     {
+        if(Hp <= 0) 
+        {
+            Instantiate(ProjectailUp, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
         //provjera za hp
         if (Hp > MaxHp) Hp = MaxHp;
         //mowment
@@ -84,6 +90,7 @@ public class MainBoss : MonoBehaviour
         if (Hp <= MaxHp/2 && !jumpOnTarget) StartCoroutine(JompOnTarget());
 
         else if (Hp <= MaxHp && InRange) StartCoroutine(atack());
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
