@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     Player instance;
     public Material Defuser;
     public Material Defult;
-    public Scene scena;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,13 +86,13 @@ public class Player : MonoBehaviour
             StartCoroutine(FireRate());
         }
 
-        if(SceneManager.GetActiveScene() == scena)
+        if(SceneManager.GetActiveScene().name == "PrviLvl")
         {
-            rend.sharedMaterial = Defuser;
+            rend.material = Defult;
          }
         else
         {
-            rend.sharedMaterial = Defult;
+            rend.material = Defuser;
         }
 
     }
