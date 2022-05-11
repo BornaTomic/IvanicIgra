@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainBoss : MonoBehaviour
 {
-    public GameObject Target;
+    GameObject Target;
     public GameObject ProjectailUp;
     public GameObject ProjectailDown;
     public GameObject ProjectailLeft;
@@ -20,6 +20,11 @@ public class MainBoss : MonoBehaviour
     public bool jumpOnTarget;
     public float JumpCooldown;
     public GameObject Gem;
+
+    private void Start()
+    {
+        Target = GameObject.Find("Player");
+    }
     void Update()
     {
         if(Hp <= 0) 

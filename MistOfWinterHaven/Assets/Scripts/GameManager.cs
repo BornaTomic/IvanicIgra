@@ -8,12 +8,13 @@ public class GameManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settings;
     public GameObject keyBinds;
+    public GameObject youDied;
     public float MaxHealth;
     public float CurrentHEalth;
     public GameObject pause;
     public GameObject inventory;
     public GameObject gui;
-    bool isInGame = false;
+    public static bool isInGame = false;
     bool isPause = false;
     public static GameManager instance;
     public List<Sprite> weaponSprites;
@@ -43,7 +44,11 @@ public class GameManager : MonoBehaviour
             Resume();
         }
 
-        if (CurrentHEalth >= MaxHealth) CurrentHEalth = MaxHealth;
+        if (CurrentHEalth <= 0)
+        {
+            StartCoroutine(YouDied());
+            CurrentHEalth = 200;
+        }
     }
 
     private void Awake()
@@ -123,24 +128,12 @@ public class GameManager : MonoBehaviour
         pause.SetActive(false);
         RandomSceneGenerator.isEmpty = true;
     }
-
-    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 kretnja, float trajanje) // E OVO TU TI JE ZNACI DA POZIVAS SAM FLOATING TEXT, NEZNAM ZAS SAM NASRO TO TU AL ONO NEMOJ SE ZBUNIT KAD KASNIJE CITAS
+    IEnumerator YouDied()
     {
-        txtmanager.Show(msg, fontSize, color, position, kretnja, trajanje);
-    }
-
-    public bool TryUpgradeWeapon()
-    {
-        if (weaponPrices.Count <= weapon.weaponLevel)//Provjeravamo da oruzije nije slucajno vec max lvl
-        {
-            return false;
-        }
-        if (coins >= weaponPrices[weapon.weaponLevel])
-        {
-            coins -= weaponPrices[weapon.weaponLevel];
-            weapon.UpgradeWeapon();
-            return true;
-        }
-        return false;
+        youDied.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        MainMenu();
+        Player.isDead = true;
+        youDied.SetActive(false);
     }
 }

@@ -19,7 +19,10 @@ public class SwordButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!GameManager.isInGame)
+        {
+            Destroy(gameObject);
+        }
     }
     public void GetSword()
     {
