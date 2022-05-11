@@ -20,6 +20,8 @@ public class MainBoss : MonoBehaviour
     public bool jumpOnTarget;
     public float JumpCooldown;
     public GameObject Gem;
+    bool isAttackedSword = false;
+    bool isAttackedBullett = false;
 
     private void Start()
     {
@@ -27,7 +29,20 @@ public class MainBoss : MonoBehaviour
     }
     void Update()
     {
-        if(Hp <= 0) 
+
+        if (isAttackedBullett)
+        {
+            Hp -= Player.damage;
+            isAttackedBullett = false;
+        }
+        if (isAttackedSword)
+        {
+            Hp -= 50;
+            isAttackedSword = false;
+        }
+
+
+        if (Hp <= 0) 
         {
             Instantiate(ProjectailUp, transform.position, Quaternion.identity);
             Destroy(gameObject);
