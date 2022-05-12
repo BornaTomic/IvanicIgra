@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public float speed = 0f;
     public float fireRate = 0f;
     bool canShoot = true;
+    bool isSnake = false;
     public static bool isDead = false;
     public static bool isDamaged = false;
     public static POV pov = POV.desno;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     Player instance;
     public Material Defuser;
     public Material Defult;
+    bool canAttack = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isSnake && canAttack)
+        {
+            StartCoroutine(SnakeDamage());
+        }
         if (isDead)
         {
             animator.SetInteger("Anim", 3);
@@ -111,11 +117,27 @@ public class Player : MonoBehaviour
             isDamaged = false;
         }
     }
+    IEnumerator SnakeDamage()
+    {
+        gameManager.GetComponent<GameManager>().CurrentHEalth -= 30;
+        isSnake = false;
+        canAttack = false;
+        Player.isDamaged = true;
+        yield return new WaitForSeconds(2f);
+        canAttack = true;
+    }
     IEnumerator FireRate()
     {
         canShoot = false;
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Snake")
+        {
+            isSnake = true;
+        }
     }
 }
 

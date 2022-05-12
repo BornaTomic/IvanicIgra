@@ -115,6 +115,15 @@ public class MainBoss : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "AttackArea")
+        {
+            isAttackedSword = true;
+        }
+        if (collision.gameObject.tag == "Bullett")
+        {
+            Destroy(collision.gameObject);
+            isAttackedBullett = true;
+        }
         if (collision.tag == "Player")
         {
             if (Hp <= MaxHp)

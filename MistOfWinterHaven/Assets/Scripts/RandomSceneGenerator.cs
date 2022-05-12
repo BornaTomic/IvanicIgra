@@ -9,12 +9,11 @@ public class RandomSceneGenerator : MonoBehaviour
     int index = 0;
     public List<string> s;
     public static RandomSceneGenerator instance;
-    GameObject border;
+    bool isInColl = false;
     // Start is called before the first frame update
     void Start()
     {
         Scenes1();
-        border = GameObject.Find("Border");
     }
 
     private void Awake()
@@ -33,6 +32,21 @@ public class RandomSceneGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isInColl)
+        {
+            isInColl = false;
+            index = Random.Range(0, s.Count);
+            SceneManager.LoadScene(s[index]);
+            s.RemoveAt(index);
+            if (s.Count == 4)
+            {
+                SceneManager.LoadScene("Scena7");
+            }
+            if (s.Count == 0)
+            {
+                SceneManager.LoadScene("Scena11");
+            }
+        }
         if (isEmpty)
         {
             Scenes1();
@@ -53,16 +67,6 @@ public class RandomSceneGenerator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        index = Random.Range(0, s.Count);
-        SceneManager.LoadScene(s[index]);
-        s.RemoveAt(index);
-        if (s.Count == 4)
-        {
-            SceneManager.LoadScene("Scena7");
-        }
-        if (s.Count == 0)
-        {
-            SceneManager.LoadScene("Scena11");
-        }
+        isInColl = true;
     }
 }

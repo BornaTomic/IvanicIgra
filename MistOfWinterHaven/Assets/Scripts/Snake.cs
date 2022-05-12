@@ -15,8 +15,6 @@ public class Snake : MonoBehaviour
     bool isAttackedSword = false;
     bool isAttackedBullett = false;
     public float damage = 30;
-    bool isInColl = false;
-    bool canAttack = true;
     GameObject gamemanager;
     // Start is called before the first frame update
     void Start()
@@ -58,11 +56,6 @@ public class Snake : MonoBehaviour
             hp -= 50;
             isAttackedSword = false;
         }
-        if (isInColl && canAttack)
-        {
-            StartCoroutine(DealDamage());
-            isInColl = false;
-        }
         if (hp <= 0)
         {
             Destroy(gameObject);
@@ -97,21 +90,9 @@ public class Snake : MonoBehaviour
             snakeLenght++;
         }
     }
-    IEnumerator DealDamage()
-    {
-        gamemanager.GetComponent<GameManager>().CurrentHEalth -= damage;
-        canAttack = false;
-        Player.isDamaged = true;
-        yield return new WaitForSeconds(2f);
-        canAttack = true;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            isInColl = true;
-        }
         if (collision.gameObject.tag == "AttackArea")
         {
             isAttackedSword = true;

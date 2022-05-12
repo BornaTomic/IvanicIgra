@@ -12,6 +12,8 @@ TagManager:
   - Bullett
   - Fighter
   - AttackArea
+  - Boss
+  - Snake
   layers:
   - Default
   - TransparentFX

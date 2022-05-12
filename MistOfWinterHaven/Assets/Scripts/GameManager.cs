@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (CurrentHEalth > MaxHealth)
+        {
+            CurrentHEalth = MaxHealth;
+        }
         if (Input.GetKeyDown(KeyCode.Escape) && !isPause && isInGame)
         {
             Pause();
@@ -71,6 +75,9 @@ public class GameManager : MonoBehaviour
         gui.SetActive(true);
         inventory.SetActive(true);
         Destroy(GameObject.Find("Sword Button(Clone)"));
+        Destroy(GameObject.Find("Border(Clone)"));
+        Destroy(GameObject.Find("Health Button 100(Clone)"));
+        Destroy(GameObject.Find("Health Button 100(Clone)"));
         isInGame = true;
     }
     public void QuitGame()
