@@ -21,5 +21,9 @@ public class BossBar : MonoBehaviour
 
         slider.maxValue = MaxHealth;
         slider.value = Health;
+        if (Boss == null)
+        {
+            Destroy(gameObject);
+        }
     }
 }

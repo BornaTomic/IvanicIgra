@@ -45,6 +45,7 @@ public class MainBoss : MonoBehaviour
         if (Hp <= 0) 
         {
             Instantiate(ProjectailUp, transform.position, Quaternion.identity);
+            Instantiate(Gem, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         //provjera za hp

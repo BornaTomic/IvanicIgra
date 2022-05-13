@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject settings;
     public GameObject keyBinds;
     public GameObject youDied;
+    GameObject doorTrigger;
     public float MaxHealth;
     public float CurrentHEalth;
     public GameObject pause;
@@ -17,15 +18,8 @@ public class GameManager : MonoBehaviour
     public static bool isInGame = false;
     bool isPause = false;
     public static GameManager instance;
-    public List<Sprite> weaponSprites;
-    public List<int> weaponPrices;
-    public List<int> xpTable;
-    public Weapon weapon;
-    public TxtManager txtmanager;
     public Player player;
-    public int coins;
     GameObject player1;
-    public int exp;
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +63,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayGame()
     {
+        Snake.snakeLenght = 0;
         CurrentHEalth = 200;
         SceneManager.LoadScene("PrviLvl");
         mainMenu.SetActive(false);
@@ -136,6 +131,8 @@ public class GameManager : MonoBehaviour
         gui.SetActive(false);
         inventory.SetActive(false);
         pause.SetActive(false);
+        doorTrigger = GameObject.Find("DoorTrigger");
+        doorTrigger.GetComponent<RandomSceneGenerator>().s.Clear();
         RandomSceneGenerator.isEmpty = true;
     }
     IEnumerator YouDied()
